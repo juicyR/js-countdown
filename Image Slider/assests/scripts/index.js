@@ -1,22 +1,26 @@
 // Necessary variables needed.
-let imageIndex = 0;
 let image = document.querySelectorAll('img');
+let imageIndex = 0;
 let time = 4000;
 
 // Calling showImage function
 showImage();
 
-// Looping through each image
+// Making all images display none
 function showImage() {
     for (let i = 0; i < image.length; i++) {
         image[i].style.display = 'none';
     }
+    
+    // Looping through each image making it display block
+    imageIndex++
+    if (imageIndex > image.length) {
+        imageIndex = 1;
+    }
+    image[imageIndex-1].style.display = 'block';
 }
-imageIndex++
-if(imageIndex > image.length) {
-    imageIndex = 1;
-}
-image[imageIndex-1].style.display = 'block';
+
+// Timing between each displayed image
 setInterval(() => {
     showImage()
 }, time);
