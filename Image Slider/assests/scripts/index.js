@@ -1,26 +1,34 @@
 // Necessary variables needed.
 let image = document.querySelectorAll('img');
 let imageIndex = 0;
-let time = 4000;
-
+let time = 1000;
 // Calling showImage function
-showImage();
+showImage()
 
 // Making all images display none
 function showImage() {
     for (let i = 0; i < image.length; i++) {
         image[i].style.display = 'none';
     }
-    
     // Looping through each image making it display block
     imageIndex++
     if (imageIndex > image.length) {
         imageIndex = 1;
     }
-    image[imageIndex-1].style.display = 'block';
+    image[imageIndex-1].style.document = 'block';
 }
 
 // Timing between each displayed image
-setInterval(() => {
-    showImage()
-}, time);
+let interval = setInterval(() => {showImage()}, time);
+
+// Image stop on hover
+function hoverFunction() {
+    clearInterval(interval);
+}
+hoverFunction();
+
+// Image continue on mouse leave
+function mouseOutFunction() {
+    showImage();
+}
+mouseOutFunction();
