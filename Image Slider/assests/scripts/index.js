@@ -15,7 +15,7 @@ function showImage() {
     if (imageIndex > image.length) {
         imageIndex = 1;
     }
-    image[imageIndex-1].style.document = 'block';
+    image[imageIndex-1].style.display = 'block';
 }
 
 // Timing between each displayed image
@@ -25,10 +25,8 @@ let interval = setInterval(() => {showImage()}, time);
 function hoverFunction() {
     clearInterval(interval);
 }
-hoverFunction();
 
 // Image continue on mouse leave
 function mouseOutFunction() {
-    showImage();
+    setInterval(() => {showImage()}, time);
 }
-mouseOutFunction();
