@@ -18,8 +18,10 @@ function showImage() {
         imageIndex = 1;
     }
     image[imageIndex-1].style.display = 'block';
+}
 
-    // Timing between each displayed image
+// Timing between each displayed image
+function sliderTime() {
     let interval = setInterval(() => {showImage()}, time);
 }
 
@@ -30,5 +32,5 @@ function hoverFunction() {
 
 // Image continue on mouse leave
 function mouseOutFunction() {
-    
+    sliderTime();
 }
