@@ -1,7 +1,13 @@
 // Necessary variables needed.
-let image = document.querySelectorAll('img');
+let image = document.getElementsByClassName('image');
 let imageIndex = 0;
 let time = 4000;
+
+// Slider arrows, on click takes you back to the prev or next
+
+
+// Image Nav, every small image takes you to that exact one!
+
 
 // Calling showImage function
 showImage()

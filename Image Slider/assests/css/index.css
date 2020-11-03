@@ -68,7 +68,7 @@ body {
   color: white;
   transition: all .5s ease-in-out;
 }
-img {
+.image {
   width: 97%;
   border: 3px solid grey;
   margin: 0 auto;
@@ -76,11 +76,46 @@ img {
   position: absolute;
   left: 0; right: 0;
 }
-/* img[src="assests/images/model-s.jpg"] {
-  display: block;
-} */
+/* Image slider arrows */
+.nav-arrows {
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  width: 69%;
+  justify-content: space-between;
+  left: 0;right: 0;top: 245%;
+  z-index: 9;
+}
+.fa-caret-square-left,
+.fa-caret-square-right {
+  color: rgba(0, 0, 0, 0.70);
+  cursor: pointer;
+}
+/* Slider arrows ends here */
+
+/* Nav bar */
+.slider-nav {
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  width: 69%;
+  justify-content: space-between;
+  left: 0;right: 0;top: 360%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.70);
+}
+.nav-image {
+  height: 70px;
+  width: 12%;
+  cursor: pointer;
+}
+/* Nav bar ends here */
+
+/* Media queries */
 @media(min-width: 1080px) {
-  img {
+  .image {
     width: 1000px;
     margin-top: 120px;    
     margin-bottom: 70px;
