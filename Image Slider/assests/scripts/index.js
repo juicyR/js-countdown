@@ -7,19 +7,53 @@ let time = 4000;
 let leftArrow = document.getElementById('left-arrow');
 let rightArrow = document.getElementById('right-arrow');
 
-function nextFunction() {
-    image[imageIndex++].style.display = 'block';
-    if (imageIndex > image.length) {
-        // imageIndex = 1;
-    }
-}
+// function nextFunction() {
+//     image[imageIndex+1].style.display = 'block';
+//     imageIndex++
+//     if (imageIndex === image.length) {
+//         imageIndex = 0;
+//     }
+// }
 
-function prevFunction() {
-    image[imageIndex--].style.display = 'block';
-    if (imageIndex < image.length) {
-        // imageIndex = 0;
-    }
-}
+// function prevFunction() {
+//     image[imageIndex--].style.display = 'block';
+//     imageIndex--
+//     if (imageIndex === 0) {
+//         imageIndex = image.length;
+//     }
+// }
+
+// function reset() {
+//     for (let i = 0; i < array.length; i++) {
+//         image[i].style.display = 'none';
+//     }
+// }
+
+// function nextFunction() {
+//     reset();
+//     image[imageIndex + 1].style.display = 'block';
+//     imageIndex++;
+// }
+
+// rightArrow.addEventListener('click', function() {
+//     if (imageIndex === image.length - 1) {
+//         imageIndex = -1;
+//     }
+//     nextFunction();
+// })
+
+// function prevFunction() {
+//     reset();
+//     image[imageIndex-1].style.display = 'block';
+//     imageIndex--
+// }
+
+// leftArrow.addEventListener('click', function() {
+//     if (imageIndex === 0) {
+//         imageIndex = image.length;
+//     }
+//     prevFunction();
+// })
 
 // Image Nav, every small image takes you to that exact one!
 let imageOne = document.getElementById('image1');
@@ -33,27 +67,99 @@ let imageEight = document.getElementById('image8');
 
 imageOne.addEventListener('click', function() {
     image[0].style.display = 'block';
+    if (image[0].style.display === 'block') {
+        image[1].style.display = 'none';
+        image[2].style.display = 'none';
+        image[3].style.display = 'none';
+        image[4].style.display = 'none';
+        image[5].style.display = 'none';
+        image[6].style.display = 'none';
+        image[7].style.display = 'none';
+    }
 });
 imageTwo.addEventListener('click', function() {
     image[1].style.display = 'block';
+    if (image[1].style.display === 'block') {
+        image[0].style.display = 'none';
+        image[2].style.display = 'none';
+        image[3].style.display = 'none';
+        image[4].style.display = 'none';
+        image[5].style.display = 'none';
+        image[6].style.display = 'none';
+        image[7].style.display = 'none';
+    }
 });
 imageThree.addEventListener('click', function() {
     image[2].style.display = 'block';
+    if (image[2].style.display === 'block') {
+        image[0].style.display = 'none';
+        image[1].style.display = 'none';
+        image[3].style.display = 'none';
+        image[4].style.display = 'none';
+        image[5].style.display = 'none';
+        image[6].style.display = 'none';
+        image[7].style.display = 'none';
+    }
 });
 imageFour.addEventListener('click', function() {
     image[3].style.display = 'block';
+    if (image[3].style.display === 'block') {
+        image[0].style.display = 'none';
+        image[1].style.display = 'none';
+        image[2].style.display = 'none';
+        image[4].style.display = 'none';
+        image[5].style.display = 'none';
+        image[6].style.display = 'none';
+        image[7].style.display = 'none';
+    }
 });
 imageFive.addEventListener('click', function() {
     image[4].style.display = 'block';
+    if (image[4].style.display === 'block') {
+        image[0].style.display = 'none';
+        image[1].style.display = 'none';
+        image[2].style.display = 'none';
+        image[3].style.display = 'none';
+        image[5].style.display = 'none';
+        image[6].style.display = 'none';
+        image[7].style.display = 'none';
+    }
 });
 imageSix.addEventListener('click', function() {
     image[5].style.display = 'block';
+    if (image[5].style.display === 'block') {
+        image[0].style.display = 'none';
+        image[1].style.display = 'none';
+        image[2].style.display = 'none';
+        image[3].style.display = 'none';
+        image[4].style.display = 'none';
+        image[6].style.display = 'none';
+        image[7].style.display = 'none';
+    }
 });
 imageSeven.addEventListener('click', function() {
     image[6].style.display = 'block';
+    if (image[6].style.display === 'block') {
+        image[0].style.display = 'none';
+        image[1].style.display = 'none';
+        image[2].style.display = 'none';
+        image[3].style.display = 'none';
+        image[4].style.display = 'none';
+        image[5].style.display = 'none';
+        image[7].style.display = 'none';
+    }
 });
 imageEight.addEventListener('click', function() {
     image[7].style.display = 'block';
+    if (image[7].style.display === 'block') {
+        image[0].style.display = 'none';
+        image[1].style.display = 'none';
+        image[2].style.display = 'none';
+        image[3].style.display = 'none';
+        image[4].style.display = 'none';
+        image[5].style.display = 'none';
+        image[6].style.display = 'none';
+    }
 });
 
 
