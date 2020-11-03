@@ -1,7 +1,7 @@
 // Necessary variables needed.
 let image = document.querySelectorAll('img');
 let imageIndex = 0;
-let time = 1000;
+let time = 4000;
 
 // Calling showImage function
 showImage()
@@ -21,9 +21,7 @@ function showImage() {
 }
 
 // Timing between each displayed image
-function sliderTime() {
-    let interval = setInterval(() => {showImage()}, time);
-}
+let interval = setInterval(() => {showImage()}, time);
 
 // Image stop on hover
 function hoverFunction() {
@@ -32,5 +30,5 @@ function hoverFunction() {
 
 // Image continue on mouse leave
 function mouseOutFunction() {
-    sliderTime();
+    interval = setInterval(() => {showImage()}, time);
 }
