@@ -7,13 +7,20 @@ let time = 4000;
 let leftArrow = document.getElementById('left-arrow');
 let rightArrow = document.getElementById('right-arrow');
 
-// function nextFunction() {
-//     image[imageIndex+1].style.display = 'block';
-//     imageIndex++
-//     if (imageIndex === image.length) {
-//         imageIndex = 0;
-//     }
-// }
+function nextFunction() {
+    image[imageIndex+1].style.display = 'block';
+    imageIndex++
+    if (imageIndex === 7) {
+        imageIndex = -1;
+        image[1].style.display = 'none';
+        image[2].style.display = 'none';
+        image[3].style.display = 'none';
+        image[4].style.display = 'none';
+        image[5].style.display = 'none';
+        image[6].style.display = 'none';
+        image[7].style.display = 'none';
+    }
+}
 
 // function prevFunction() {
 //     image[imageIndex--].style.display = 'block';
@@ -22,38 +29,6 @@ let rightArrow = document.getElementById('right-arrow');
 //         imageIndex = image.length;
 //     }
 // }
-
-// function reset() {
-//     for (let i = 0; i < array.length; i++) {
-//         image[i].style.display = 'none';
-//     }
-// }
-
-// function nextFunction() {
-//     reset();
-//     image[imageIndex + 1].style.display = 'block';
-//     imageIndex++;
-// }
-
-// rightArrow.addEventListener('click', function() {
-//     if (imageIndex === image.length - 1) {
-//         imageIndex = -1;
-//     }
-//     nextFunction();
-// })
-
-// function prevFunction() {
-//     reset();
-//     image[imageIndex-1].style.display = 'block';
-//     imageIndex--
-// }
-
-// leftArrow.addEventListener('click', function() {
-//     if (imageIndex === 0) {
-//         imageIndex = image.length;
-//     }
-//     prevFunction();
-// })
 
 // Image Nav, every small image takes you to that exact one!
 let imageOne = document.getElementById('image1');
