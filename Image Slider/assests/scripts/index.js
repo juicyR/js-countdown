@@ -1,34 +1,30 @@
+// Undone
+// Prev and Next functonalities
+// Transition
+
 // Necessary variables needed.
 let image = document.getElementsByClassName('image');
 let imageIndex = 0;
 let time = 4000;
+
 
 // Slider arrows, on click takes you back to the prev or next
 let leftArrow = document.getElementById('left-arrow');
 let rightArrow = document.getElementById('right-arrow');
 
 function nextFunction() {
-    image[imageIndex+1].style.display = 'block';
-    imageIndex++
-    if (imageIndex === 7) {
-        imageIndex = -1;
-        image[1].style.display = 'none';
-        image[2].style.display = 'none';
-        image[3].style.display = 'none';
-        image[4].style.display = 'none';
-        image[5].style.display = 'none';
-        image[6].style.display = 'none';
-        image[7].style.display = 'none';
+    image[imageIndex++].style.display = 'block';
+    if (imageIndex === image.length) {
+        
     }
 }
 
-// function prevFunction() {
-//     image[imageIndex--].style.display = 'block';
-//     imageIndex--
-//     if (imageIndex === 0) {
-//         imageIndex = image.length;
-//     }
-// }
+function prevFunction() {
+    image[imageIndex--].style.display = 'block';
+    if (condition) {
+        
+    }
+}
 
 // Image Nav, every small image takes you to that exact one!
 let imageOne = document.getElementById('image1');
