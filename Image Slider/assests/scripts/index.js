@@ -1,6 +1,9 @@
-// Undone
-// Prev and Next functonalities
-// Transition
+/*
+Unfinished Tasks
+1) Prev and Next functionalities
+2) Transition
+Multiple bugs to fix
+*/
 
 // Necessary variables needed.
 let image = document.getElementsByClassName('image');
@@ -15,16 +18,16 @@ let rightArrow = document.getElementById('right-arrow');
 function nextFunction() {
     image[imageIndex++].style.display = 'block';
     if (imageIndex === image.length) {
-        
+        imageIndex = 0;
     }
 }
 
-function prevFunction() {
-    image[imageIndex--].style.display = 'block';
-    if (condition) {
-        
-    }
-}
+// function prevFunction() {
+//     image[imageIndex--].style.display = 'block';
+//     if (image[6].style.display = 'block') {
+//         image[6++].style.display = 'none';
+//     }
+// }
 
 // Image Nav, every small image takes you to that exact one!
 let imageOne = document.getElementById('image1');
