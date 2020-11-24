@@ -1,8 +1,10 @@
 /*
-Unfinished Tasks
-1) Prev and Next functionalities
-2) Transition
-Multiple bugs to fix
+    Unfinished Tasks
+    1) Transition
+
+    Almost finished tasks
+    1) Prev and Next Functionalities
+        Multiple bugs to fix
 */
 
 // Necessary variables needed.
@@ -17,10 +19,15 @@ let rightArrow = document.getElementById('right-arrow');
 
 // Previous Function
 function prevFunction() {
+
+    // Displaying the previous image block
     image[imageIndex--].style.display = 'block';
+
+    // Making the image on top display none, for the image behind to be visible.
     if (image[imageIndex--].style.display = 'block') {
         image[imageIndex+2].style.display = 'none';
     }
+    // When the slider reaches the first image, it goes to the last, when the button is pressed.
     if (imageIndex < 0) {
         imageIndex = image.length - 1;
         image[imageIndex].style.display = 'block';
@@ -30,7 +37,11 @@ function prevFunction() {
 
 // Next function
 function nextFunction() {
+
+    // Displaying the front image block
     image[imageIndex++].style.display = 'block';
+
+    // When the slider reaches the last image, it goes back to the first, when the button is pressed.
     if (imageIndex > image.length - 1) {
         imageIndex = 0;
         image[imageIndex].style.display = 'block';
