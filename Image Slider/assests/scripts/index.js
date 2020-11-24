@@ -15,19 +15,26 @@ let time = 4000;
 let leftArrow = document.getElementById('left-arrow');
 let rightArrow = document.getElementById('right-arrow');
 
+function prevFunction() {
+    if(imageIndex > 0) {
+        image[imageIndex - 1].style.display = 'block';
+        imageIndex--;
+    }else {
+        image[image.length - 1].style.display = 'block';
+        imageIndex = image.length - 1;
+    }
+}
+
 function nextFunction() {
-    image[imageIndex++].style.display = 'block';
-    if (imageIndex === image.length) {
+    if (imageIndex < image.length - 1) {
+        image[imageIndex++].style.display = 'block';
+        imageIndex++;
+    }else {
+        image[0].style.display = 'block';
         imageIndex = 0;
     }
 }
 
-// function prevFunction() {
-//     image[imageIndex--].style.display = 'block';
-//     if (image[6].style.display = 'block') {
-//         image[6++].style.display = 'none';
-//     }
-// }
 
 // Image Nav, every small image takes you to that exact one!
 let imageOne = document.getElementById('image1');
