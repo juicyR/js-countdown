@@ -15,24 +15,22 @@ let time = 4000;
 let leftArrow = document.getElementById('left-arrow');
 let rightArrow = document.getElementById('right-arrow');
 
+// Previous Function
 function prevFunction() {
-    if(imageIndex > 0) {
-        image[imageIndex - 1].style.display = 'block';
-        imageIndex--;
-    }else {
-        image[image.length - 1].style.display = 'block';
-        imageIndex = image.length - 1;
+    image[imageIndex--].style.display = 'block';
+    if (image[imageIndex--].style.display = 'block') {
+        image[imageIndex+2].style.display = 'none';
     }
+    if (imageIndex < 0) {
+        imageIndex = image.length - 1;
+        image[imageIndex].style.display = 'block';
+    }
+    interval = setInterval(() => {showImage()}, time);
 }
 
+// Next function
 function nextFunction() {
-    if (imageIndex < image.length - 1) {
-        image[imageIndex++].style.display = 'block';
-        imageIndex++;
-    }else {
-        image[0].style.display = 'block';
-        imageIndex = 0;
-    }
+
 }
 
 
