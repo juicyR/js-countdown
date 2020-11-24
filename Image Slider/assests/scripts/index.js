@@ -25,12 +25,17 @@ function prevFunction() {
         imageIndex = image.length - 1;
         image[imageIndex].style.display = 'block';
     }
-    interval = setInterval(() => {showImage()}, time);
+    // interval = setInterval(() => {showImage()}, time);
 }
 
 // Next function
 function nextFunction() {
-
+    image[imageIndex++].style.display = 'block';
+    if (imageIndex > image.length - 1) {
+        imageIndex = 0;
+        image[imageIndex].style.display = 'block';
+        image[image.length - 1].style.display = 'none';
+    }
 }
 
 
