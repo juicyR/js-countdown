@@ -10,7 +10,7 @@
 // Necessary variables needed.
 let image = document.getElementsByClassName('image');
 let imageIndex = 0;
-let time = 4000;
+let time = 5000;
 
 
 // Slider arrows, on click takes you back to the prev or next
@@ -190,4 +190,4 @@ function mouseOutFunction() {
 }
 
 // Transitions
-
+image.style.WebkitAnimation = "animationColor 2s 1";

@@ -66,7 +66,6 @@ body {
   background-size: cover;
   font-weight: 600;
   color: white;
-  transition: all .5s ease-in-out;
 }
 .image {
   width: 97%;
@@ -76,6 +75,17 @@ body {
   position: absolute;
   left: 0; right: 0;
 }
+
+@-webkit-keyframes animationColor {
+  0% {
+    -webkit-filter: grayscale(100%);
+  }
+
+  100% {
+    -webkit-filter: grayscale(0);
+  }
+}
+
 /* Image slider arrows */
 .nav-arrows {
   position: absolute;
