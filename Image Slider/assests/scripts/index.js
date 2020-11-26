@@ -24,8 +24,8 @@ function prevFunction() {
     image[imageIndex--].style.display = 'block';
 
     // Making the image on top display none, for the image behind to be visible.
-    if (image[imageIndex--].style.display = 'block') {
-        image[imageIndex+2].style.display = 'none';
+    if (image[imageIndex].style.display = 'block') {
+        image[imageIndex++].style.display = 'none';
     }
     // When the slider reaches the first image, it goes to the last, when the button is pressed.
     if (imageIndex < 0) {
@@ -42,7 +42,7 @@ function nextFunction() {
     image[imageIndex++].style.display = 'block';
 
     // When the slider reaches the last image, it goes back to the first, when the button is pressed.
-    if (imageIndex > image.length - 1) {
+    if (imageIndex > image.length) {
         imageIndex = 0;
         image[imageIndex].style.display = 'block';
         image[image.length - 1].style.display = 'none';
@@ -191,3 +191,4 @@ function mouseOutFunction() {
 
 // Transitions
 image.style.WebkitAnimation = "animationColor 2s 1";
+

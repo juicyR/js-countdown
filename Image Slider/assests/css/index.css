@@ -74,6 +74,7 @@ body {
   /* display: none; */
   position: absolute;
   left: 0; right: 0;
+  /* -webkit-animation: animationColor 2s 1; */
 }
 
 @-webkit-keyframes animationColor {
