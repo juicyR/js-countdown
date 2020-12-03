@@ -27,27 +27,27 @@ function prevFunction() {
     if (image[imageIndex].style.display = 'block') {
         image[imageIndex++].style.display = 'none';
     }
-    // When the slider reaches the first image, it goes to the last, when the button is pressed.
-    if (imageIndex < 0) {
-        imageIndex = image.length - 1;
-        image[imageIndex].style.display = 'block';
-    }
+    // // When the slider reaches the first image, it goes to the last, when the button is pressed.
+    // if (imageIndex < 0) {
+    //     imageIndex = image.length - 1;
+    //     image[imageIndex].style.display = 'block';
+    // }
     // interval = setInterval(() => {showImage()}, time);
 }
 
 // Next function
-function nextFunction() {
+// function nextFunction() {
 
-    // Displaying the front image block
-    image[imageIndex++].style.display = 'block';
+//     // Displaying the front image block
+//     image[imageIndex++].style.display = 'block';
 
-    // When the slider reaches the last image, it goes back to the first, when the button is pressed.
-    if (imageIndex > image.length) {
-        imageIndex = 0;
-        image[imageIndex].style.display = 'block';
-        image[image.length - 1].style.display = 'none';
-    }
-}
+//     // When the slider reaches the last image, it goes back to the first, when the button is pressed.
+//     if (imageIndex > image.length) {
+//         imageIndex = 0;
+//         image[imageIndex].style.display = 'block';
+//         image[image.length - 1].style.display = 'none';
+//     }
+// }
 
 
 // Image Nav, every small image takes you to that exact one!
