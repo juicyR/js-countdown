@@ -12,7 +12,7 @@ h2 {
     font-size: 5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
 
 .coming-soon{
@@ -27,9 +27,9 @@ h2 {
     display: flex;
     justify-content: space-around;
     margin-bottom: 4em;
+    text-align: center;
 }
 
 .day,.hour,.minute,.second {
     font-size: 3rem;
-
 }
