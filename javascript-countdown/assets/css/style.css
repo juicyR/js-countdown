@@ -5,11 +5,14 @@
 }
 body {
     font-family: "Lato", sans-serif;
+    padding: 3em;
 }
 
 h2 {
     font-size: 5rem;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: .5em;
 }
 
 .coming-soon{
@@ -18,4 +21,15 @@ h2 {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4em;
+}
+
+.day,.hour,.minute,.second {
+    font-size: 3rem;
+
 }
